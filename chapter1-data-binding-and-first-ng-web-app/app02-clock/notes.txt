@@ -1,0 +1,3 @@
+ declaring the ng-controller attribute on a DOM element says that all of the element inside of it belong to the controller.
+
+ The controller function takes one parameter, the $scope of the DOM element. This $scope object is available on the element and the controller (as we can see) and it will be the bridge for how we’ll communicate from the controller to the view.

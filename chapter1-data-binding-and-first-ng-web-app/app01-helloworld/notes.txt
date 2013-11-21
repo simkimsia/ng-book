@@ -1,0 +1,11 @@
+This feature works by simply including angular.js in our HTML and explicitly setting the ng-app attribute on an element in the DOM. 
+
+The ng-app attribute declares that everything inside of it belongs to this Angular app.
+
+That’s how we can nest an Angular app inside of a web app. The only components that will be affected by Angular are the DOM elements that we declare inside of the one with the ng-app attribute.
+
+For instance, if there is a variable named name and it is equal to “Ari”, string interpolation on a view of "Hello {{ name }}" will return “Hello Ari”.
+
+The model object that we are referring to is the $scope object. The $scope object is simply a javascript object whose properties are all available to the view and the controller can interact with. 
+
+Therefore, ng-model="name" means $scope has a property called `name` and the value of `name` is set by the value of the textbox in real time. Which means in real-time all {{ name }} are instantly updated.

@@ -1,0 +1,8 @@
+Not too sure what the best practice is about.
+
+The only change i see is the way you initialize the $scope.clock.
+
+In app02, it was $scope.clock = {}
+In app03, it was $scope.clock = {now: new Date()} 
+
+What best practice is this?
