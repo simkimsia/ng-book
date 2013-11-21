@@ -1,0 +1,17 @@
+The angular module api allows us to declare a module using the angular.module api method. 
+
+When declaring a module, we’ll need to pass two parameters to the method.
+
+The first will be the name of the module we are creating. The second is the list of dependencies, or injectables.
+
+var app=angular.module('myApp',[]);
+
+We can always reference our module by using the same method with only one parameter.
+
+For instance, we can reference the myApp module like so:
+//app is the same as the app in the previous example
+//this method fetches the app
+var app=angular.module('myApp');
+
+From here, we can create our applications on top of the app variable. When writing large applications, we’ll create several different modules to contain our logic.
+
