@@ -1,0 +1,10 @@
+It is considered a best-practice to name our controllers [Name]Ctrl in camelcase.
+
+var app = angular.module('app',[]);
+
+app.controller('FirstCtrl',['$scope',function($scope) {
+  $scope.message = "hello";
+}]);
+
+
+This sets the dependency of the controller to rely on the $scope provided by AngularJS.

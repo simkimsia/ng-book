@@ -1,0 +1,17 @@
+Instead of placing variables on the $rootScope, we can explicitly create a child $scope object using a controller. We can attach a controller object to a DOM element using the ng-controller directive on a DOM element, 
+
+instead of attaching the movie variable on the $rootScope, we can create a controller that will manage our variable:
+
+The ng-controller directive creates a new $scope object for the DOM element and nests it in the containing $rootScope.
+
+
+Scope lifecycle:
+
+1. Scopes are created by the $injector using the $rootScope. $scopes are created with new controllers and directives.
+
+2. When the $scope is linked to the view, all directives that create $scope’s will register their watches on the scope. These watches, just like controller watches and propagates model changes from the view to the directive.
+
+3. During the $digest cycle, which executes on the $rootScope, all of the children scopes will perform dirty digest checking. All of the watching expressions are checked for any changes and the scope then calls the listener callback when they are changed.
+
+4. When a $scope is no longer needed, the child scope creator will need to call scope.$destroy() to clean up the child scope.
+Note that when a scope is destroyed, the $destroy event will be broadcasted.
