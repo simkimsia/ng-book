@@ -1,7 +1,7 @@
-There is one exception in the case that a scope is created inside of a directive, this is called the isolate scope.
+Although your angular app will run parse for you automatically when running the $digest loop, sometimes it’s useful to parse an angular expression manually.
 
-With that one exception, all scopes are created with prototypal inheritance, meaning that they have access to their parent scopes. If we are familiar with object-oriented programming, this behavior should look familiar.
 
-It is a best practice to keep our controllers as slim as possible. It’s bad practice to do any DOM interaction or data manipulating inside the controller.
+Expressions are evaluated by the $parse service, a service that is baked into AngularJS core, so we can get access to the raw functions that are actually run to evaluate expressions using the $parse service.
 
-As we previously mentioned, $scopes have the ability to watch for changes of a particular property and react to the change.
+
+To manually parse an expression, we can inject the $parse service into a controller and call the service to do the parsing for us. For instance, if we have an input box in our page that’s bound to the expr variable, like so:
