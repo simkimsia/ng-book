@@ -1,0 +1,17 @@
+It is ideal to contain the application logic in a controller and the working data on the scope of the controller.
+
+The $rootScope object is the closest object we have to the global context in an angular app. It’s a bad idea to attach too much logic to this global context, just like it’s not a good idea to dirty the javascript global scope.
+
+There are the different types of markup that are able to be used in a template through Angular. These include the following:
+• Directives – the elements (attributes or elements) that augment the existing DOM element into a reusable DOM component.
+• Markup – the template syntax {{ }} binds expressions to the view.
+• Filters – formatting functions available in the view
+• Form controls – user input validation controls.
+
+Scopes have the following basic functions:
+• They provide observers to watch for model changes
+• They provide the ability to propagate model changes through the application as well as outside the system to other components
+• They can be nested such that they can isolate functionality and model properties.
+• They provide an execution environment in which expressions are evaluated.
+
+Scopes are objects that contain functionality and data to use when rendering the view. It is the single source of truth for all views. You can think of scopes as view models.

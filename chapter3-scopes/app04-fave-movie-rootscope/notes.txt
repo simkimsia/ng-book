@@ -1,0 +1,5 @@
+Here’s an example of scopes in practice. 
+
+We’ll set a variable name on the $rootScope and reference in a view,
+
+And our view can now reference this movie property to show to the user:
