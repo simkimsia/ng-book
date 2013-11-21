@@ -1,0 +1,49 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+    <title>chapter6-filters app11 common filters app</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular.js"></script>
+  </head>
+  <body ng-controller="FiltersController">
+    <pre ng-non-bindable>
+      {{ 123.456789|number:2 }}
+    </pre>
+    <div>is now {{123.456789|number:2}}</div>
+    <pre ng-non-bindable>
+      {{ 123 | currency }}
+    </pre>
+    <div>is now {{ 123 | currency }}</div>
+    <pre ng-non-bindable>
+
+      {{ today | date:'medium' }}<br/>
+      {{today|date:'short'}}<br/>
+      {{ today | date:'fullDate' }}<br/>
+      {{ today | date:'longDate' }}<br/>
+      {{today|date:'mediumDate'}}<br/>
+      {{ today | date:'shortDate' }} <br/>
+      {{today|date:'mediumTime'}}<br/>
+      {{ today | date:'shortTime' }} <br/>
+
+      where today is defined as 1288323623006 inside the app.js under the FiltersController
+    </pre>
+    <div>is now 
+      {{ today | date:'medium' }}<br/>
+      {{ today |date:'short'}}<br/>
+      {{ today | date:'fullDate' }}<br/>
+      {{ today | date:'longDate' }}<br/>
+      {{today|date:'mediumDate'}}<br/>
+      {{ today | date:'shortDate' }}<br/>
+      {{today|date:'mediumTime'}}<br/>
+      {{ today | date:'shortTime' }} <br/>
+    </div>
+    <pre ng-non-bindable>
+      {{ 123.456789|number:2 }}&lt;!--Displays:123.46--&gt;;
+    </pre>
+    <div>is now {{123.456789|number:2}}<!--Displays:123.46--></div>
+    <pre ng-non-bindable>
+      {{ 123.456789|number:2 }}&lt;!--Displays:123.46--&gt;;
+    </pre>
+    <div>is now {{123.456789|number:2}}<!--Displays:123.46--></div>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

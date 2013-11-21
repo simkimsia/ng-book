@@ -1,0 +1,17 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+    <title>chapter5-expressions app10 Interpolating app</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular.js"></script>
+  </head>
+  <body>
+    <div ng-controller="MyController" id="emailEditor">
+      <input ng-model="to" type="email" placeholder="Recipient" />
+      <textarea ng-model="emailBody"></textarea>
+    </div>
+    <div id="emailPreview">
+      <pre>{{ previewText }}</pre>
+    </div>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

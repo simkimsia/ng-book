@@ -1,0 +1,1 @@
+The $interpolate service will return an interpolation function that takes a context object against which the expressions will be evaluated against.
