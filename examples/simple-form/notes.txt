@@ -1,0 +1,2 @@
+taken from http://jsbin.com/UduNeCA/1/edit
+inside ng-book page 93
