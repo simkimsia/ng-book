@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="LTE" default="deploy">
+  <!--
+  Build.xml file for CakePHP
+
+  Uses phing to create releases, and pear packages.
+  Based off of build.xml in doctrine.
+
+  Requires the d51PearPkg2 to be installed:
+
+  pear channel-discover pear.domain51.com
+  pear install domain51/Phing_d51PearPkg2Task
+
+  Use the `release` task to update VERSION.txt, and create a new tag.
+  Use the `build` task to create a pear package based on the current working copy.
+  Use the `clean` task to clean up packaging artifacts.
+  -->
+
+    <property name="domain" value="ng-book.oppoin.com" override="true" />
+
+    <property name="repository-uri" value="git@github.com:simkimsia/ng-book.git" override="true" />
+
+    <property name="server-user" value="www-data" override="true" />
+    <property name="server-ip" value="166.78.124.182" override="true" />
+    <property name="host-used" value="${server-user}@${server-ip}" override="true" />
+
+    <property name="production.branch" value="master" override="true" />
+    <property name="production.sitedir" value="/var/virtual/${domain}/" override="true" />
+
+    <tstamp>
+        <format property="build.time" pattern="%Y_%m_%d_%H_%M_%S" />
+    </tstamp>
+
+    <target name="deploy" depends="gitclone,update-symlink-current">
+        <echo msg="Preparing deploy on rackspace server for ng-book environment" />
+
+    </target>
+
+    <target name="gitclone">
+        <echo msg="gitclone ${production.branch} branch code to ${production} environment" />
+
+        <exec command="ssh -A ${host-used} 'git clone -b ${production.branch} ${repository-uri} ${production.sitedir}${build.time}'"
+         outputProperty="result" escape="false"/>
+        <echo msg="${result}" />
+
+    </target>
+
+    <target name="update-symlink-current">
+        <echo msg="Updating symlink at current to latest cloned files for ${environment} deployment" />
+
+        <!-- remove the symlink if it is already there -->
+        <exec command="ssh -A ${host-used} 'rm ${production.sitedir}current'" outputProperty="result" />
+
+        <!-- <delete dir="${environment.sitedir}current" quiet='true' /> -->
+        <exec command="ssh -A ${host-used} 'ln -s ${production.sitedir}${build.time} ${production.sitedir}current'" outputProperty="result" />
+        <echo msg="${result}" />
+    </target>
+
+</project>
