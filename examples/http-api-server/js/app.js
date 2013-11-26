@@ -1,5 +1,5 @@
 angular.module('myApp', [])
-.controller('FormController', function($scope) {
+.controller('FormController', function($scope, $http) {
   $scope.fields = [
     {placeholder: 'Username', isRequired: true},
     {placeholder: 'Password', isRequired: true},
@@ -7,6 +7,9 @@ angular.module('myApp', [])
   ];
 
   $scope.submitForm = function() {
-    alert("it works!");
+    $http({
+      method: 'POST',
+      url: 'api/server.php'
+    });
   };
 });
