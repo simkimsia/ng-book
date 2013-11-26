@@ -8,20 +8,105 @@
 </head>
 <body>
 
-<form name="signup_form" ng-controller="FormController" ng-submit="submitForm()" novalidate>
-  <div ng-repeat="field in fields" ng-form="signup_form_input">
-    <input type="text"
-           name="dynamic_input"
-           ng-required="field.isRequired"
-           ng-model="field.name"
-           placeholder="{{field.placeholder}}" />
-    <div ng-show="signup_form_input.dynamic_input.$dirty && signup_form_input.dynamic_input.$invalid">
-      <span class="error" ng-show="signup_form_input.dynamic_input.$error.required">The field is required.</span>
-    </div>
-  </div>
-  <button type="submit" ng-disabled="signup_form.$invalid">Submit All</button>
-</form>
+  <form name="signup_form" novalidate ng-submit="signupForm()" ng-controller="signupController">
+    <fieldset>
+      <legend>Signup</legend>
 
+      <div class="row">
+        <div class="large-12 columns">
+          <label>Your name</label>
+          <input type="text"
+                 placeholder="Name"
+                 name="name"
+                 ng-model="signup.name"
+                 ng-minlength=3
+                 ng-maxlength=20
+                 ng-class="{error: signup_form.name.$dirty && signup_form.name.$invalid}"
+                 required />
+        <div class="error"
+             ng-show="signup_form.name.$dirty && signup_form.name.$invalid && !signup_form.name.$focused">
+          <small class="error"
+                 ng-show="signup_form.name.$error.required">
+                 Your name is required.
+          </small>
+          <small class="error"
+                 ng-show="signup_form.name.$error.minlength">
+                 Your name is required to be at least 3 characters
+          </small>
+          <small class="error"
+                 ng-show="signup_form.name.$error.maxlength">
+                 Your name cannot be longer than 20 characters
+          </small>
+        </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="large-12 columns">
+          <label>Your email</label>
+          <input type="email"
+            placeholder="Email"
+            name="email"
+            ng-model="signup.email"
+            ng-minlength=3 ng-maxlength=20
+            ng-class="{error: signup_form.name.$dirty && signup_form.name.$invalid}"
+            required />
+          <div class="error"
+               ng-show="signup_form.email.$dirty && signup_form.email.$invalid && signup_form.submitted">
+            <small class="error"
+                   ng-show="signup_form.email.$error.required">
+                   Your email is required.
+            </small>
+            <small class="error"
+                   ng-show="signup_form.email.$error.minlength">
+                   Your email is required to be at least 3 characters
+            </small>
+            <small class="error"
+                   ng-show="signup_form.email.$error.email">
+                   That is not a valid email. Please input a valid email.
+            </small>
+            <small class="error"
+                   ng-show="signup_form.email.$error.maxlength">
+                   Your email cannot be longer than 20 characters
+            </small>
+          </div>
+        </div>
+      </div>
+
+      <div class="large-12 columns">
+        <label>Username</label>
+          <input  type="text"
+                  placeholder="Desired username"
+                  name="username"
+                  ng-model="signup.username"
+                  ng-minlength=3
+                  ng-maxlength=20
+                  ng-class="{error: signup_form.name.$dirty && signup_form.name.$invalid}"
+                  ensure-unique="username" required />
+        <div class="error"
+             ng-show="signup_form.email.$dirty && signup_form.email.$invalid && signup_form.submitted">
+          <small class="error"
+                 ng-show="signup_form.username.$error.required">
+                 Please input a username
+          </small>
+          <small class="error"
+                 ng-show="signup_form.username.$error.minlength">
+                 Your username is required to be at least 3 characters
+          </small>
+          <small class="error"
+                 ng-show="signup_form.username.$error.maxlength">
+                 Your username cannot be longer than 20 characters
+          </small>
+          <small class="error"
+                 ng-show="signup_form.username.$error.unique">
+                 That username is taken, please try another
+          </small>
+        </div>
+      </div>
+
+      <button type="submit" class="button radius">Submit</button>
+    </fieldset>
+  </form>
   <script src="js/app.js"></script>
 </body>
 </html>

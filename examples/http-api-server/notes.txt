@@ -1,2 +1,4 @@
-taken from http://jsbin.com/UduNeCA/1/edit
-inside ng-book page 93
+Build a form that talks to api server, (page 245 or calling APIs)
+we need:
+ - services that handle the communications between angular and api server( See page 161 of pdf or Registering a service)
+ - app.js needs to use dependency injection to incorporate services
