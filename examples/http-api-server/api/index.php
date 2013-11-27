@@ -1,6 +1,8 @@
 <?php
 error_reporting(E_ALL);
-require_once 'vendor/restler.php';
+ini_set('display_errors', '1');
+$loader = require_once 'restler/vendor/autoload.php';
+$loader->setUseIncludePath(true);
 use Luracast\Restler\Restler;
 
 $r = new Restler();
