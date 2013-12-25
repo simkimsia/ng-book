@@ -49,10 +49,10 @@
             name="email"
             ng-model="signup.email"
             ng-minlength=3 ng-maxlength=20
-            ng-class="{error: signup_form.name.$dirty && signup_form.name.$invalid}"
+            ng-class="{error: signup_form.email.$dirty && signup_form.email.$invalid}"
             required />
           <div class="error"
-               ng-show="signup_form.email.$dirty && signup_form.email.$invalid && signup_form.submitted">
+               ng-show="signup_form.email.$dirty && signup_form.email.$invalid">
             <small class="error"
                    ng-show="signup_form.email.$error.required">
                    Your email is required.
@@ -81,10 +81,10 @@
                   ng-model="signup.username"
                   ng-minlength=3
                   ng-maxlength=20
-                  ng-class="{error: signup_form.name.$dirty && signup_form.name.$invalid}"
+                  ng-class="{error: signup_form.username.$dirty && signup_form.username.$invalid}"
                   ensure-unique="username" required />
         <div class="error"
-             ng-show="signup_form.email.$dirty && signup_form.email.$invalid && signup_form.submitted">
+             ng-show="signup_form.username.$dirty && signup_form.username.$invalid">
           <small class="error"
                  ng-show="signup_form.username.$error.required">
                  Please input a username

@@ -7,4 +7,5 @@ use Luracast\Restler\Restler;
 
 $r = new Restler();
 $r->addAPIClass('Say'); // repeat for more
+$r->addAPIClass('Check'); // repeat for more
 $r->handle(); //serve the response

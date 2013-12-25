@@ -519,6 +519,38 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "examples/http-api-server/js/app.js",
+			"settings":
+			{
+				"buffer_size": 1362,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "build.xml",
+			"settings":
+			{
+				"buffer_size": 2339,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "examples/http-api-server/api/index.php",
+			"settings":
+			{
+				"buffer_size": 278,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "examples/http-api-server/api/Say.php",
+			"settings":
+			{
+				"buffer_size": 128,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -643,6 +675,24 @@
 	},
 	"file_history":
 	[
+		"/Users/simkimsia/Dropbox/WebApps/ng-book/examples/http-api-server/api/Say.php",
+		"/Users/simkimsia/Downloads/inbox/restler3.luracast.com",
+		"/Users/simkimsia/Downloads/inbox/luracast.com",
+		"/Users/simkimsia/Dropbox/WebApps/ng-book/examples/http-api-server/api/index.php",
+		"/Users/simkimsia/Dropbox/WebApps/ng-book/examples/http-api-server/api/JsonFormat.php",
+		"/Users/simkimsia/Dropbox/WebApps/ng-book/examples/http-api-server/api/public/index.php",
+		"/Users/simkimsia/Dropbox/WebApps/ng-book/examples/http-api-server/api/public/no-slash.htaccess",
+		"/Users/simkimsia/Dropbox/WebApps/ng-book/examples/http-api-server/api/classes/controllers/NewsController.php",
+		"/Users/simkimsia/Dropbox/WebApps/ng-book/examples/http-api-server/api/data/news.txt",
+		"/Users/simkimsia/Dropbox/WebApps/ng-book/examples/http-api-server/api/classes/controllers/SayController.php",
+		"/Users/simkimsia/Dropbox/WebApps/ng-book/examples/http-api-server/api 3.59.25 PM/SayController.php",
+		"/Users/simkimsia/Dropbox/WebApps/ng-book/examples/http-api-server/index.html",
+		"/Users/simkimsia/Dropbox/WebApps/ng-book/examples/http-api-server/api/composer.json",
+		"/Users/simkimsia/Dropbox/WebApps/ng-book/examples/http-api-server/js/services.js",
+		"/Users/simkimsia/Dropbox/WebApps/ng-book/examples/simple-form/notes.txt",
+		"/Users/simkimsia/Dropbox/WebApps/ng-book/examples/http-api-server/notes.txt",
+		"/Users/simkimsia/Dropbox/WebApps/ng-book/examples/http-api-server/js/app.js",
+		"/Users/simkimsia/Dropbox/WebApps/ng-book/examples/http-api-server/api/check.php",
 		"/Users/simkimsia/Dropbox/WebApps/cake-json/ltequotationapp/Config/core.php",
 		"/Users/simkimsia/Dropbox/WebApps/cake-json/ltequotationapp/Config/bootstrap.php",
 		"/Users/simkimsia/Dropbox/WebApps/cake-json/ltequotationapp/Config/Migration/1380074932_add_main_year_to_years_and_last_accessed_year_to_users.php",
@@ -752,25 +802,7 @@
 		"/Users/simkimsia/Dropbox/WebApps/cake-json/ltequotationapp/View/JobProjects/index.ctp",
 		"/Users/simkimsia/Dropbox/WebApps/cake-json/ltequotationapp/View/Jobs/view.ctp",
 		"/Users/simkimsia/Dropbox/WebApps/cake-json/ltequotationapp/View/Jobs/add_by_project.ctp",
-		"/Users/simkimsia/Dropbox/WebApps/cake-json/ltequotationapp/Controller/Component/AutoLoginComponent.php",
-		"/Users/simkimsia/Dropbox/WebApps/cake-json/ltequotationapp/Controller/UsersController.php",
-		"/Users/simkimsia/Dropbox/WebApps/cake-json/ltequotationapp/View/Jobs/get_by_project.ctp",
-		"/Users/simkimsia/Dropbox/WebApps/cake-json/ltequotationapp/View/Jobs/get_by_job_project.ctp",
-		"/Users/simkimsia/Dropbox/WebApps/cake-json/.gitignore",
-		"/Users/simkimsia/Dropbox/WebApps/cake-json/ltequotationapp/Plugin/CakephpBackbone/composer.json",
-		"/Users/simkimsia/Dropbox/WebApps/cake-json/ltequotationapp/webroot/js/collections/SitesByJobCollection.js",
-		"/Users/simkimsia/Dropbox/WebApps/cake-json/ltequotationapp/webroot/js/SitesInQuotationApp.js",
-		"/Users/simkimsia/Dropbox/WebApps/cake-json/ltequotationapp/webroot/js/collections/SiteCollection.js",
-		"/Users/simkimsia/Dropbox/WebApps/cake-json/ltequotationapp/webroot/js/views/site/SitesByJobAppView.js",
-		"/Users/simkimsia/Dropbox/WebApps/cake-json/ltequotationapp/webroot/js/views/site/SitesByQuotationAppView.js",
-		"/Users/simkimsia/Dropbox/WebApps/cake-json/ltequotationapp/webroot/js/collections/SitesByQuotationCollection.js",
-		"/Users/simkimsia/Dropbox/WebApps/cake-json/ltequotationapp/webroot/js/views/site/SiteAddNewView.js",
-		"/Users/simkimsia/Dropbox/WebApps/cake-json/ltequotationapp/webroot/js/views/site/SiteAddToJobView.js",
-		"/Users/simkimsia/Dropbox/WebApps/cake-json/ltequotationapp/Model/SitesInJob.php",
-		"/Users/simkimsia/Dropbox/WebApps/cake-json/ltequotationapp/View/Elements/add_new_site.ctp",
-		"/Users/simkimsia/Dropbox/WebApps/cake-json/ltequotationapp/View/Quotations/add.ctp",
-		"/Users/simkimsia/Dropbox/WebApps/cake-json/ltequotationapp/webroot/js/collections/SitePaginatedCollection.js",
-		"/Users/simkimsia/Dropbox/WebApps/cake-json/ltequotationapp/webroot/cache_js/backbone-searchsites.v1377687837.js"
+		"/Users/simkimsia/Dropbox/WebApps/cake-json/ltequotationapp/Controller/Component/AutoLoginComponent.php"
 	],
 	"find":
 	{
@@ -916,6 +948,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"environment",
 			"cache",
 			"_insertOutdoorImage",
 			"image",
@@ -1042,8 +1075,7 @@
 			"tech_",
 			"addProducts",
 			"SaveAndExitQuotationView",
-			"typeof options",
-			"options"
+			"typeof options"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1134,8 +1166,121 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "examples/http-api-server/js/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1362,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								579,
+								579
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "build.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2339,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1390,
+								1390
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 809.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "examples/http-api-server/api/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 278,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6,
+								6
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "examples/http-api-server/api/Say.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 128,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								128,
+								128
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
