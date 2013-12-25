@@ -7,19 +7,16 @@ angular.module('myApp', [])
       scope.$watch(attrs.ngModel, function(newVal) {
         if (!checking) {
           checking = $timeout(function() {
-            if (typeof (scope.signup) != 'undefined' &&
-              typeof (scope.signupusername) != 'undefined') {
-              $http({
-                method: 'POST',
-                url: '/api/check/' + attrs.ensureUnique,
-                data: {'username': scope.signup.username} // this does not work
-              }).success(function(data, status, headers, cfg) {
-                c.$setValidity('unique', data.isUnique);
-                checking = null;
-              }).error(function(data, status, headers, cfg) {
-                checking = null;
-              });
-            }// end if scope.signup.username is defined
+            $http({
+              method: 'POST',
+              url: '/api/check/' + attrs.ensureUnique,
+              data: {'username': c.$modelValue} // this does not work
+            }).success(function(data, status, headers, cfg) {
+              c.$setValidity('unique', data.isUnique);
+              checking = null;
+            }).error(function(data, status, headers, cfg) {
+              checking = null;
+            });
           }, 500);
         }
       });
